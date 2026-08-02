@@ -67,13 +67,16 @@ Agent, and general-purpose assistants such as Claude — now produce complete,
 deployable web applications from a paragraph of prose. Their users are
 frequently not professional developers, and the generated application is
 commonly deployed with a single click, without review. Industry scans report
-that this pipeline ships a substantial volume of vulnerable software: one scan
-of approximately 1,400 applications built on such platforms reported thousands
-of critical findings including leaked secrets and exposed personal data
-(Escape, 2026), a second scan of 1,430 applications reported that 73% contained
-at least one critical flaw (VibeEval, 2026), and industry analyses report
-elevated vulnerability density in AI-authored code relative to human-authored
-code (Cloud Security Alliance, 2026; OX Security, 2026).
+that this pipeline ships a substantial volume of vulnerable software: a scan of
+5,600 publicly reachable vibe-coded applications reported over 2,000
+high-impact vulnerabilities, more than 400 exposed secrets, and 175 instances of
+exposed personal data, all in live production systems (Escape, 2025); a second
+scan of 1,430 applications reported 5,711 vulnerabilities, with 73% of
+applications containing at least one critical flaw and 89% missing basic
+security headers (VibeEval, 2026); and industry analyses report elevated
+vulnerability density in AI-authored code together with an absence of governance
+guidance for citizen developers (OX Security, 2026; Cloud Security Alliance,
+2026).
 
 These studies establish prevalence. They do not establish mechanism. Because
 they scan uncontrolled samples — whatever applications happened to be built and
@@ -87,9 +90,9 @@ defaults.
 
 Academic work on AI-generated code security has largely examined code in
 isolation or in aggregate ecosystems (Wang et al., 2025), the degradation of
-security across iterative generation (arXiv:2506.11022), and the security of
-infrastructure-as-code and deployment agents (arXiv:2506.05623;
-arXiv:2606.05238; arXiv:2507.09063). To our knowledge, no study has held the
+security across iterative generation (Shukla et al., 2025), and the security of
+infrastructure-as-code and deployment agents (Zhang et al., 2025; Arora et al.,
+2025; Wang et al., 2026). To our knowledge, no study has held the
 application specification constant while varying the generation tool, which is
 the design required to attribute exposure to its cause.
 
@@ -253,9 +256,11 @@ Two results held across every application:
   inside a server-side edge function — committed to source control, but not
   exposed to the browser.
 
-The second result contradicts the common expectation, and the premise of much
-industry commentary, that non-expert AI-assisted development leaks credentials
-to the client.
+The first result is corroborated by, and slightly stronger than, the independent
+industry scan of VibeEval (2026), which reported 89% of 1,430 applications
+missing basic security headers. The second result contradicts the common
+expectation, and the premise of much industry commentary, that non-expert
+AI-assisted development leaks credentials to the client.
 
 ### 3.3 Access control is determined by the prompt
 
@@ -462,48 +467,43 @@ generated between 26 July and 2 August 2026.
 
 ## References
 
-> **Verification note for the author:** every reference below must be checked
-> against the primary source before submission — confirm authors, titles, venue,
-> year, and identifiers, and replace any entry that cannot be verified.
-> Industry scans are cited as grey literature and should be described as such.
+All references were verified against their primary sources on 2 August 2026.
+Entries marked *(grey literature)* are vendor or industry reports, not
+peer-reviewed publications, and are cited as evidence of practitioner-observed
+prevalence only.
 
-Cloud Security Alliance. 2026. *Vibe coding security: AI-generated code and the
-governance gap.* CSA Research Notes. Available at
-https://labs.cloudsecurityalliance.org/
+Arora A, Jang J, Zilouchian Moghaddam R. 2025. *SetupBench: assessing software
+engineering agents' ability to bootstrap development environments.*
+arXiv:2507.09063.
 
-Escape Technologies. 2026. *Security scan of applications built with
-vibe-coding platforms.* Industry report.
+Cloud Security Alliance AI Safety Initiative. 2026. *The vibe coding governance
+gap.* CSA Research Note, 2 June 2026. Available at
+https://labs.cloudsecurityalliance.org/research/csa-research-note-vibe-coding-ai-governance-gap-20260602-csa/
+*(grey literature)*
 
-OX Security. 2026. *Vibe coding security: vulnerability rates in AI-generated
-code.* Industry report.
+Escape Technologies. 2025. *The state of security of vibe coded apps.* Industry
+report; 5,600 applications scanned, October 2025. Available at
+https://escape.tech/state-of-security-of-vibe-coded-apps *(grey literature)*
 
-Rose S, Borchert O, Mitchell S, Connelly S. 2020. *Zero trust architecture.*
-NIST Special Publication 800-207. National Institute of Standards and
-Technology, Gaithersburg, MD.
+OX Security. 2026. *Vibe coding security: why 62% of AI-generated code ships
+with vulnerabilities.* Industry report, 27 May 2026. Available at
+https://www.ox.security/blog/vibe-coding-security/ *(grey literature)*
 
-Runeson P, Höst M. 2009. Guidelines for conducting and reporting case study
-research in software engineering. *Empirical Software Engineering* 14(2):131–164.
+Shukla S, Joshi H, Syed R. 2025. *Security degradation in iterative AI code
+generation: a systematic analysis of the paradox.* arXiv:2506.11022. Accepted,
+IEEE International Symposium on Technology and Society (ISTAS) 2025.
 
 VibeEval. 2026. *Vulnerability scan of 1,430 applications built with AI coding
-tools.* Industry report.
+tools.* Industry report, February 2026. Available at https://vibe-eval.com/
+*(grey literature)*
 
 Wang B, Yu W, Zhong Y, Yu H, Lian K, Lu C, Zheng H, Zhang D, Li H. 2025. *AI
 code in the wild: measuring security risks and ecosystem shifts of AI-generated
 code in modern software.* arXiv:2512.18567.
 
-*Deployability-centric infrastructure-as-code generation: fail, learn, refine,
-and succeed through LLM-empowered DevOps simulation.* 2025. arXiv:2506.05623.
+Wang Y, et al. 2026. *DeployBench: benchmarking LLM agents for research artifact
+deployment.* arXiv:2606.05238.
 
-*DeployBench: benchmarking LLM agents for research artifact deployment.* 2026.
-arXiv:2606.05238.
-
-*SetupBench: assessing software engineering agents' environment setup
-capabilities.* 2025. arXiv:2507.09063.
-
-*Security degradation in iterative AI code generation: a systematic analysis of
-the paradox.* 2025. arXiv:2506.11022.
-
-*No free lunch with guardrails.* 2025. arXiv:2504.00441.
-
-*LLMSecConfig: an LLM-based approach for fixing software container
-misconfigurations.* 2025. arXiv:2502.02009.
+Zhang T, Pan S, Zhang Z, Xing Z, Sun X. 2025. *Deployability-centric
+infrastructure-as-code generation: fail, learn, refine, and succeed through
+LLM-empowered DevOps simulation.* arXiv:2506.05623.
