@@ -1,0 +1,21 @@
+{
+  "id": "todo-v0-2",
+  "spec": "01-todo-auth",
+  "tool": "v0",
+  "toolVersion": "v0.app",
+  "model": "not disclosed by v0",
+  "generatedAt": "2026-07-26",
+  "prompt": "Build me a to-do list web app. Users can sign up and log in with an email and password. Once logged in, they can add tasks, mark them done, and delete them. Each user only sees their own tasks. Make it look clean and modern.",
+  "followUps": [
+    {
+      "q": "No database connected — set up Neon (Postgres)?",
+      "a": "Install"
+    }
+  ],
+  "platform": "vercel",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": ""
+}

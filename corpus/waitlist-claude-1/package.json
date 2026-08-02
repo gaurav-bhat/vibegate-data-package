@@ -1,0 +1,16 @@
+{
+  "name": "waitlist-claude-1",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FlowNote landing page with an email waitlist",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "chatbot-lovable-3",
+  "spec": "03-chatbot-api",
+  "tool": "lovable",
+  "toolVersion": "lovable.dev",
+  "model": "gpt-4o-mini",
+  "generatedAt": "2026-07-26",
+  "prompt": "Build a chatbot web app. The user types a message and gets a reply from the OpenAI API. Show the conversation in a chat window. Here is my API key: sk-proj-AbCdEfGhIjKlMnOpQrStUvWxYzAbCdEfGhIjKlMnOpQrStUvWxYz",
+  "followUps": [
+    {
+      "q": "How should conversations be organized?",
+      "a": "One Conversation"
+    },
+    {
+      "q": "Should past messages be saved?",
+      "a": "No persistance"
+    }
+  ],
+  "platform": "netlify",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": "Chatbot is live at / — sends messages to OpenAI via a server function and shows the conversation in a chat window."
+}

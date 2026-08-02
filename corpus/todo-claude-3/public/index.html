@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drift — Tasks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="backdrop"></div>
+
+  <main class="stage">
+    <!-- Auth -->
+    <section id="view-auth" class="panel auth-panel">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span class="brand-name">Drift</span>
+      </div>
+
+      <div id="auth-error" class="notice notice-error hidden"></div>
+
+      <form id="form-login" class="form">
+        <h1>Welcome back</h1>
+        <p class="lede">Log in to pick up where you left off.</p>
+
+        <label for="login-email">Email</label>
+        <input id="login-email" type="email" autocomplete="email" required />
+
+        <label for="login-password">Password</label>
+        <input id="login-password" type="password" autocomplete="current-password" required />
+
+        <button type="submit" class="btn btn-primary">Log in</button>
+        <p class="swap">First time here? <a href="#" data-target="signup">Create an account</a></p>
+      </form>
+
+      <form id="form-signup" class="form hidden">
+        <h1>Create your account</h1>
+        <p class="lede">Takes ten seconds. No spam, promise.</p>
+
+        <label for="signup-email">Email</label>
+        <input id="signup-email" type="email" autocomplete="email" required />
+
+        <label for="signup-password">Password</label>
+        <input id="signup-password" type="password" autocomplete="new-password" minlength="8" required />
+        <p class="field-note">At least 8 characters.</p>
+
+        <button type="submit" class="btn btn-primary">Sign up</button>
+        <p class="swap">Already registered? <a href="#" data-target="login">Log in</a></p>
+      </form>
+    </section>
+
+    <!-- App -->
+    <section id="view-app" class="panel app-panel hidden">
+      <header class="app-header">
+        <div class="brand">
+          <span class="brand-dot"></span>
+          <span class="brand-name">Drift</span>
+        </div>
+        <div class="who">
+          <span id="who-email" class="who-email"></span>
+          <button id="btn-logout" class="btn btn-ghost">Log out</button>
+        </div>
+      </header>
+
+      <div class="progress-row">
+        <div class="progress-track">
+          <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
+        </div>
+        <span id="progress-label" class="progress-label">0 of 0 done</span>
+      </div>
+
+      <form id="form-add" class="add-row">
+        <input id="add-input" type="text" placeholder="What's next?" autocomplete="off" />
+        <button type="submit" class="btn btn-primary">Add</button>
+      </form>
+
+      <div id="task-error" class="notice notice-error hidden"></div>
+
+      <ul id="task-list" class="task-list"></ul>
+      <p id="empty-state" class="empty hidden">Nothing on your list. Add a task to get moving.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

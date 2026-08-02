@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowNote — Waitlist signups</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <h1>Waitlist signups</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Joined</th>
+        </tr>
+      </thead>
+      <tbody id="signups-body">
+        <tr>
+          <td colspan="2">Loading…</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    fetch('/api/admin/signups')
+      .then((res) => res.json())
+      .then((rows) => {
+        const body = document.getElementById('signups-body');
+        if (!rows.length) {
+          body.innerHTML = '<tr><td colspan="2">No signups yet.</td></tr>';
+          return;
+        }
+        body.innerHTML = rows
+          .map(
+            (row) =>
+              `<tr><td>${row.email.replace(/</g, '&lt;')}</td><td>${row.created_at}</td></tr>`
+          )
+          .join('');
+      })
+      .catch(() => {
+        document.getElementById('signups-body').innerHTML =
+          '<tr><td colspan="2">Failed to load signups.</td></tr>';
+      });
+  </script>
+</body>
+</html>

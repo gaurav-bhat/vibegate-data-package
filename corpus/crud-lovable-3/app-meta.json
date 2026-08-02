@@ -1,0 +1,16 @@
+{
+  "id": "crud-lovable-3",
+  "spec": "04-crud-dashboard",
+  "tool": "lovable",
+  "toolVersion": "lovable.dev",
+  "model": "not disclosed by lovable",
+  "generatedAt": "2027-07-27",
+  "prompt": "Build an admin dashboard for managing a list of products. I should be able to add, edit, and delete products, each with a name, price, and description. Store the products in a database and show them in a table.",
+  "followUps": [],
+  "platform": "netlify",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": ""
+}

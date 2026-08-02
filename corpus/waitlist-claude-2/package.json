@@ -1,0 +1,15 @@
+{
+  "name": "flownote-waitlist",
+  "version": "1.0.0",
+  "description": "FlowNote landing page with email waitlist signup",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0"
+  }
+}

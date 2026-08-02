@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Photo Gallery"
+version = "1.0.0"
+id = "artifacts/gallery"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18417
+
+[services.development]
+run = "pnpm --filter @workspace/gallery run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/gallery", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/gallery/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18417"
+BASE_PATH = "/"

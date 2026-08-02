@@ -1,0 +1,16 @@
+{
+  "id": "file-bolt-3",
+  "spec": "05-file-upload",
+  "tool": "bolt",
+  "toolVersion": "bolt.new",
+  "model": "not disclosed by bolt",
+  "generatedAt": "2027-07-29",
+  "prompt": "Make a web app where I can upload images and see them in a gallery. Anyone with the link should be able to view the gallery. Store the uploaded files somewhere they can be displayed.",
+  "followUps": [],
+  "platform": "netlify",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": ""
+}

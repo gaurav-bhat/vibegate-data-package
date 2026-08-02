@@ -1,0 +1,21 @@
+{
+  "id": "crud-v0-3",
+  "spec": "04-crud-dashboard",
+  "tool": "v0",
+  "toolVersion": "v0.app",
+  "model": "not disclosed by v0",
+  "generatedAt": "2026-07-26",
+  "prompt": "Build an admin dashboard for managing a list of products. I should be able to add, edit, and delete products, each with a name, price, and description. Store the products in a database and show them in a table.",
+  "followUps": [
+    {
+      "q": "No database connected — set up Neon (Postgres)?",
+      "a": "Install"
+    }
+  ],
+  "platform": "vercel",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": "v0 asked the login question for crud-1 and crud-2 but not crud-3 (defaulted silently to no authentication)."
+}

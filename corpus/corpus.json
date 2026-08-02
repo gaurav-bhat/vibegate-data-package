@@ -1,0 +1,604 @@
+{
+  "apps": [
+    {
+      "id": "chatbot-bolt-1",
+      "dir": "chatbot-bolt-1",
+      "tool": "bolt",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "chatbot-bolt-2",
+      "dir": "chatbot-bolt-2",
+      "tool": "bolt",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "chatbot-bolt-3",
+      "dir": "chatbot-bolt-3",
+      "tool": "bolt",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "chatbot-claude-1",
+      "dir": "chatbot-claude-1",
+      "tool": "claude",
+      "platform": "nodejs",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "chatbot-claude-2",
+      "dir": "chatbot-claude-2",
+      "tool": "claude",
+      "platform": "nodejs",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "chatbot-claude-3",
+      "dir": "chatbot-claude-3",
+      "tool": "claude",
+      "platform": "nodejs",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "chatbot-lovable-1",
+      "dir": "chatbot-lovable-1",
+      "tool": "lovable",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "chatbot-lovable-2",
+      "dir": "chatbot-lovable-2",
+      "tool": "lovable",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "chatbot-lovable-3",
+      "dir": "chatbot-lovable-3",
+      "tool": "lovable",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "chatbot-replit-1",
+      "dir": "chatbot-replit-1",
+      "tool": "replit",
+      "platform": "replit",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "chatbot-replit-2",
+      "dir": "chatbot-replit-2",
+      "tool": "replit",
+      "platform": "replit",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "chatbot-replit-3",
+      "dir": "chatbot-replit-3",
+      "tool": "replit",
+      "platform": "replit",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "chatbot-v0-1",
+      "dir": "chatbot-v0-1",
+      "tool": "v0",
+      "platform": "vercel",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "chatbot-v0-2",
+      "dir": "chatbot-v0-2",
+      "tool": "v0",
+      "platform": "vercel",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "chatbot-v0-3",
+      "dir": "chatbot-v0-3",
+      "tool": "v0",
+      "platform": "vercel",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "crud-bolt-1",
+      "dir": "crud-bolt-1",
+      "tool": "bolt",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "crud-bolt-2",
+      "dir": "crud-bolt-2",
+      "tool": "bolt",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "crud-bolt-3",
+      "dir": "crud-bolt-3",
+      "tool": "bolt",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "crud-claude-1",
+      "dir": "crud-claude-1",
+      "tool": "claude",
+      "platform": "nodejs",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "crud-claude-2",
+      "dir": "crud-claude-2",
+      "tool": "claude",
+      "platform": "nodejs",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "crud-claude-3",
+      "dir": "crud-claude-3",
+      "tool": "claude",
+      "platform": "nodejs",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "crud-lovable-1",
+      "dir": "crud-lovable-1",
+      "tool": "lovable",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "crud-lovable-2",
+      "dir": "crud-lovable-2",
+      "tool": "lovable",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "crud-lovable-3",
+      "dir": "crud-lovable-3",
+      "tool": "lovable",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "crud-replit-1",
+      "dir": "crud-replit-1",
+      "tool": "replit",
+      "platform": "replit",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "crud-replit-2",
+      "dir": "crud-replit-2",
+      "tool": "replit",
+      "platform": "replit",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "crud-replit-3",
+      "dir": "crud-replit-3",
+      "tool": "replit",
+      "platform": "replit",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "crud-v0-1",
+      "dir": "crud-v0-1",
+      "tool": "v0",
+      "platform": "vercel",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "crud-v0-2",
+      "dir": "crud-v0-2",
+      "tool": "v0",
+      "platform": "vercel",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "crud-v0-3",
+      "dir": "crud-v0-3",
+      "tool": "v0",
+      "platform": "vercel",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "file-bolt-1",
+      "dir": "file-bolt-1",
+      "tool": "bolt",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "file-bolt-2",
+      "dir": "file-bolt-2",
+      "tool": "bolt",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "file-bolt-3",
+      "dir": "file-bolt-3",
+      "tool": "bolt",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "file-claude-1",
+      "dir": "file-claude-1",
+      "tool": "claude",
+      "platform": "nodejs",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "file-claude-2",
+      "dir": "file-claude-2",
+      "tool": "claude",
+      "platform": "nodejs",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "file-claude-3",
+      "dir": "file-claude-3",
+      "tool": "claude",
+      "platform": "nodejs",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "file-lovable-1",
+      "dir": "file-lovable-1",
+      "tool": "lovable",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "file-lovable-2",
+      "dir": "file-lovable-2",
+      "tool": "lovable",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "file-lovable-3",
+      "dir": "file-lovable-3",
+      "tool": "lovable",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "file-replit-1",
+      "dir": "file-replit-1",
+      "tool": "replit",
+      "platform": "replit",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "file-replit-2",
+      "dir": "file-replit-2",
+      "tool": "replit",
+      "platform": "replit",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "file-replit-3",
+      "dir": "file-replit-3",
+      "tool": "replit",
+      "platform": "replit",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "file-v0-1",
+      "dir": "file-v0-1",
+      "tool": "v0",
+      "platform": "vercel",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "file-v0-2",
+      "dir": "file-v0-2",
+      "tool": "v0",
+      "platform": "vercel",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "file-v0-3",
+      "dir": "file-v0-3",
+      "tool": "v0",
+      "platform": "vercel",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "todo-bolt-1",
+      "dir": "todo-bolt-1",
+      "tool": "bolt",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "todo-bolt-2",
+      "dir": "todo-bolt-2",
+      "tool": "bolt",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "todo-bolt-3",
+      "dir": "todo-bolt-3",
+      "tool": "bolt",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "todo-claude-1",
+      "dir": "todo-claude-1",
+      "tool": "claude",
+      "platform": "nodejs",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "todo-claude-2",
+      "dir": "todo-claude-2",
+      "tool": "claude",
+      "platform": "nodejs",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "todo-claude-3",
+      "dir": "todo-claude-3",
+      "tool": "claude",
+      "platform": "nodejs",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "todo-lovable-1",
+      "dir": "todo-lovable-1",
+      "tool": "lovable",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "todo-lovable-2",
+      "dir": "todo-lovable-2",
+      "tool": "lovable",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "todo-lovable-3",
+      "dir": "todo-lovable-3",
+      "tool": "lovable",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "todo-replit-1",
+      "dir": "todo-replit-1",
+      "tool": "replit",
+      "platform": "replit",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "todo-replit-2",
+      "dir": "todo-replit-2",
+      "tool": "replit",
+      "platform": "replit",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "todo-replit-3",
+      "dir": "todo-replit-3",
+      "tool": "replit",
+      "platform": "replit",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "todo-v0-1",
+      "dir": "todo-v0-1",
+      "tool": "v0",
+      "platform": "vercel",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "todo-v0-2",
+      "dir": "todo-v0-2",
+      "tool": "v0",
+      "platform": "vercel",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "todo-v0-3",
+      "dir": "todo-v0-3",
+      "tool": "v0",
+      "platform": "vercel",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "waitlist-bolt-1",
+      "dir": "waitlist-bolt-1",
+      "tool": "bolt",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "waitlist-bolt-2",
+      "dir": "waitlist-bolt-2",
+      "tool": "bolt",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "waitlist-bolt-3",
+      "dir": "waitlist-bolt-3",
+      "tool": "bolt",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "waitlist-claude-1",
+      "dir": "waitlist-claude-1",
+      "tool": "claude",
+      "platform": "nodejs",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "waitlist-claude-2",
+      "dir": "waitlist-claude-2",
+      "tool": "claude",
+      "platform": "nodejs",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "waitlist-claude-3",
+      "dir": "waitlist-claude-3",
+      "tool": "claude",
+      "platform": "nodejs",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "waitlist-lovable-1",
+      "dir": "waitlist-lovable-1",
+      "tool": "lovable",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "waitlist-lovable-2",
+      "dir": "waitlist-lovable-2",
+      "tool": "lovable",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "waitlist-lovable-3",
+      "dir": "waitlist-lovable-3",
+      "tool": "lovable",
+      "platform": "netlify",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "waitlist-replit-1",
+      "dir": "waitlist-replit-1",
+      "tool": "replit",
+      "platform": "replit",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "waitlist-replit-2",
+      "dir": "waitlist-replit-2",
+      "tool": "replit",
+      "platform": "replit",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "waitlist-replit-3",
+      "dir": "waitlist-replit-3",
+      "tool": "replit",
+      "platform": "replit",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "waitlist-v0-1",
+      "dir": "waitlist-v0-1",
+      "tool": "v0",
+      "platform": "vercel",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "waitlist-v0-2",
+      "dir": "waitlist-v0-2",
+      "tool": "v0",
+      "platform": "vercel",
+      "secretMode": "auto-move",
+      "smoke": false
+    },
+    {
+      "id": "waitlist-v0-3",
+      "dir": "waitlist-v0-3",
+      "tool": "v0",
+      "platform": "vercel",
+      "secretMode": "auto-move",
+      "smoke": false
+    }
+  ]
+}

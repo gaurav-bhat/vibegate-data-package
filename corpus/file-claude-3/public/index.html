@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Image Gallery</h1>
+    <p>Upload an image and share the link with anyone.</p>
+  </header>
+
+  <main>
+    <section id="upload-section">
+      <form id="upload-form">
+        <label id="drop-zone" for="file-input">
+          <span id="drop-text">Click to choose an image or drag one here</span>
+          <input type="file" id="file-input" name="image" accept="image/*" hidden />
+        </label>
+        <button type="submit" id="upload-btn">Upload</button>
+      </form>
+      <p id="status"></p>
+    </section>
+
+    <section id="gallery-section">
+      <div id="gallery" class="gallery"></div>
+      <p id="empty-message" hidden>No images yet. Be the first to upload one!</p>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <span id="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

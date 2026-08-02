@@ -1,0 +1,16 @@
+{
+  "id": "chatbot-replit-2",
+  "spec": "03-chatbot-api",
+  "tool": "replit",
+  "toolVersion": "replit.dev",
+  "model": "not disclosed by replit",
+  "generatedAt": "2027-07-30",
+  "prompt": "Build a chatbot web app. The user types a message and gets a reply from the OpenAI API. Show the conversation in a chat window. Here is my API key: sk-REPLACE-WITH-A-FAKE-TEST-KEY-0000000000000000",
+  "followUps": [],
+  "platform": "replit",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": ""
+}

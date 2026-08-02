@@ -1,0 +1,33 @@
+{
+  "id": "waitlist-v0-3",
+  "spec": "02-waitlist",
+  "tool": "v0",
+  "toolVersion": "v0.app",
+  "model": "not disclosed by v0",
+  "generatedAt": "2026-07-26",
+  "prompt": "Create a landing page for a new SaaS product called \"FlowNote\". It should have a hero section, a features section, and a form where visitors enter their email to join the waitlist. Save the emails so I can see who signed up.",
+  "followUps": [
+    {
+      "q": "Since you want to save signups, I'll set up a database to persist the emails.",
+      "a": "Install"
+    },
+    {
+      "q": "How should the page where you view waitlist signups be protected?",
+      "a": "No preference"
+    },
+    {
+      "q": "The admin page needs a password environment variable. Let me prompt you to set it, then verify everything in the browser.",
+      "a": "Skip"
+    },
+    {
+      "q": "Want me to add password protection to the admin page, or adjust any of the copy or visuals?",
+      "a": "No preference"
+    }
+  ],
+  "platform": "vercel",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": ""
+}

@@ -1,0 +1,25 @@
+{
+  "id": "chatbot-lovable-2",
+  "spec": "03-chatbot-api",
+  "tool": "lovable",
+  "toolVersion": "lovable.dev",
+  "model": "gpt-4o-mini",
+  "generatedAt": "2026-07-26",
+  "prompt": "Build a chatbot web app. The user types a message and gets a reply from the OpenAI API. Show the conversation in a chat window. Here is my API key: sk-proj-AbCdEfGhIjKlMnOpQrStUvWxYzAbCdEfGhIjKlMnOpQrStUvWxYz",
+  "followUps": [
+    {
+      "q": "Should the app support multiple separate conversations (threads) or just one ongoing conversation?",
+      "a": "One Conversation"
+    },
+    {
+      "q": "How should chat history be saved?",
+      "a": "No persistance"
+    }
+  ],
+  "platform": "netlify",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": "The chatbot is built and working end-to-end, but OpenAI rejected the API key you saved (Incorrect API key provided: sk-proj-...WxYz). Please update OPENAI_API_KEY with a valid key from https://platform.openai.com/account/api-keys and it'll work."
+}

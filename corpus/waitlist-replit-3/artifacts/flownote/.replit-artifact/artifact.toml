@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "FlowNote Landing Page"
+description = "A landing page for FlowNote, a SaaS product. Features a hero section, a features section, and a waitlist signup form that collects and stores visitor email addresses."
+version = "1.0.0"
+id = "artifacts/flownote"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24159
+
+[services.development]
+run = "pnpm --filter @workspace/flownote run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/flownote", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/flownote/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24159"
+BASE_PATH = "/"

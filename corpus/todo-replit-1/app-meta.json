@@ -1,0 +1,16 @@
+{
+  "id": "todo-replit-1",
+  "spec": "01-todo-auth",
+  "tool": "replit",
+  "toolVersion": "replit.dev",
+  "model": "not disclosed by replit",
+  "generatedAt": "2027-07-31",
+  "prompt": "Build me a to-do list web app. Users can sign up and log in with an email and password. Once logged in, they can add tasks, mark them done, and delete them. Each user only sees their own tasks. Make it look clean and modern.",
+  "followUps": [],
+  "platform": "replit",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": ""
+}

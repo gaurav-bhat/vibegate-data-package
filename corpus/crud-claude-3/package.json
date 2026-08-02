@@ -1,0 +1,16 @@
+{
+  "name": "crud-claude-3",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Admin dashboard for managing products",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

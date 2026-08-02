@@ -1,0 +1,16 @@
+{
+  "id": "waitlist-claude-1",
+  "spec": "02-waitlist",
+  "tool": "claude",
+  "toolVersion": "Claude Code (VS Code extension)",
+  "model": "Sonnet 5",
+  "generatedAt": "2026-08-02",
+  "prompt": "Create a landing page for a new SaaS product called \"FlowNote\". It should have a hero section, a features section, and a form where visitors enter their email to join the waitlist. Save the emails so I can see who signed up.",
+  "followUps": [],
+  "platform": "nodejs",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": "node v22.23.1. Signups are stored in SQLite (signups.db). The signup list is viewable at /admin, protected with HTTP Basic Auth — set an ADMIN_PASSWORD env var to enable it; until then /admin and /api/admin/signups return 503 instead of exposing emails."
+}

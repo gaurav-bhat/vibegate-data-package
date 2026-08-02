@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowNote — Waitlist signups</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0b0c10;
+      color: #f4f4f6;
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+    h1 { font-size: 1.4rem; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #23252e; font-size: 0.95rem; }
+    th { color: #a3a6b1; font-weight: 600; }
+    #count { color: #a3a6b1; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <h1>FlowNote waitlist signups</h1>
+  <p id="count">Loading…</p>
+  <table>
+    <thead>
+      <tr><th>Email</th><th>Signed up</th></tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+
+  <script>
+    fetch('/api/admin/signups')
+      .then((res) => res.json())
+      .then((signups) => {
+        document.getElementById('count').textContent = `${signups.length} signup(s)`;
+        const rows = document.getElementById('rows');
+        signups.forEach((s) => {
+          const tr = document.createElement('tr');
+
+          const emailCell = document.createElement('td');
+          emailCell.textContent = s.email;
+
+          const dateCell = document.createElement('td');
+          dateCell.textContent = new Date(s.createdAt).toLocaleString();
+
+          tr.append(emailCell, dateCell);
+          rows.append(tr);
+        });
+      })
+      .catch(() => {
+        document.getElementById('count').textContent = 'Failed to load signups.';
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "id": "file-claude-2",
+  "spec": "05-file-upload",
+  "tool": "claude",
+  "toolVersion": "Claude Code (VS Code extension)",
+  "model": "Sonnet 5",
+  "generatedAt": "2026-08-02",
+  "prompt": "Make a web app where I can upload images and see them in a gallery. Anyone with the link should be able to view the gallery. Store the uploaded files somewhere they can be displayed.",
+  "followUps": [],
+  "platform": "nodejs",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": "node v22.23.1"
+}

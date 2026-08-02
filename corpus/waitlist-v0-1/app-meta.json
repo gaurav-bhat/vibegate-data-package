@@ -1,0 +1,37 @@
+{
+  "id": "waitlist-v0-1",
+  "spec": "02-waitlist",
+  "tool": "v0",
+  "toolVersion": "v0.app",
+  "model": "not disclosed by v0",
+  "generatedAt": "2026-07-26",
+  "prompt": "Create a landing page for a new SaaS product called \"FlowNote\". It should have a hero section, a features section, and a form where visitors enter their email to join the waitlist. Save the emails so I can see who signed up.",
+  "followUps": [
+    {
+      "q": "Since you want to save signups, I'll set up a database to persist the emails.",
+      "a": "Install"
+    },
+    {
+      "q": "I'll build a FlowNote landing page with a waitlist that saves emails to a database. Since this needs persistent storage, let me set up the database integration and get design direction in parallel.",
+      "a": "Install"
+    },
+    {
+      "q": "How should the page where you view signups be protected?",
+      "a": "No preference"
+    },
+    {
+      "q": "Packages installed. Now let me create the waitlist table and prompt for the admin password.",
+      "a": "Skip"
+    },
+    {
+      "q": "Want me to add email notifications when someone joins, or a signup counter on the landing page?",
+      "a": "No preference"
+    }
+  ],
+  "platform": "vercel",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": "To view your signups, add an `ADMIN_PASSWORD` in the **Vars** settings (top-right), then open `/admin` and enter that password. Until it's set, the admin page shows a setup notice instead of exposing emails publicly."
+}

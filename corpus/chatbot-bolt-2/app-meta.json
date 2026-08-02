@@ -1,0 +1,16 @@
+{
+  "id": "chatbot-bolt-2",
+  "spec": "03-chatbot-api",
+  "tool": "bolt",
+  "toolVersion": "bolt.new",
+  "model": "not disclosed by bolt",
+  "generatedAt": "2027-07-28",
+  "prompt": "Build a chatbot web app. The user types a message and gets a reply from the OpenAI API. Show the conversation in a chat window. Here is my API key: sk-REPLACE-WITH-A-FAKE-TEST-KEY-0000000000000000",
+  "followUps": [],
+  "platform": "netlify",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "crud-claude-2",
+  "spec": "04-crud-dashboard",
+  "tool": "claude",
+  "toolVersion": "Claude Code (VS Code extension)",
+  "model": "Sonnet 5",
+  "generatedAt": "2026-08-02",
+  "prompt": "Build an admin dashboard for managing a list of products. I should be able to add, edit, and delete products, each with a name, price, and description. Store the products in a database and show them in a table.",
+  "followUps": [],
+  "platform": "nodejs",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": "node v22.23.1"
+}

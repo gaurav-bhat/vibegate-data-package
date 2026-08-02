@@ -1,0 +1,21 @@
+{
+  "id": "file-v0-3",
+  "spec": "05-file-upload",
+  "tool": "v0",
+  "toolVersion": "v0.app",
+  "model": "not disclosed by v0",
+  "generatedAt": "2026-07-26",
+  "prompt": "Make a web app where I can upload images and see them in a gallery. Anyone with the link should be able to view the gallery. Store the uploaded files somewhere they can be displayed.",
+  "followUps": [
+    {
+      "q": "I'll build an image gallery app with upload functionality. Since uploaded files need to be stored somewhere they can be displayed publicly to anyone with the link, I'll use Vercel Blob storage. Let me set that up first.",
+      "a": "Install"
+    }
+  ],
+  "platform": "vercel",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": ""
+}

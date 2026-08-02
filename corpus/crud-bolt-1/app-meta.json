@@ -1,0 +1,16 @@
+{
+  "id": "crud-bolt-1",
+  "spec": "04-crud-dashboard",
+  "tool": "bolt",
+  "toolVersion": "bolt.new",
+  "model": "not disclosed by bolt",
+  "generatedAt": "2027-07-29",
+  "prompt": "Build an admin dashboard for managing a list of products. I should be able to add, edit, and delete products, each with a name, price, and description. Store the products in a database and show them in a table.",
+  "followUps": [],
+  "platform": "netlify",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": ""
+}

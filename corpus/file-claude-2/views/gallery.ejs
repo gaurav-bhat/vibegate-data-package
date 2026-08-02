@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Image Gallery</h1>
+    <p>Drop an image below to add it — this gallery link is public, so anyone who has it can view the photos.</p>
+  </header>
+
+  <main>
+    <section class="upload-box" id="drop-zone">
+      <form id="upload-form" action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" id="file-input" name="image" accept="image/*" required hidden />
+        <label for="file-input" id="drop-label">
+          Drag &amp; drop an image here, or click to choose one
+        </label>
+        <button type="submit">Upload</button>
+      </form>
+    </section>
+
+    <section class="gallery">
+      <% if (images.length === 0) { %>
+        <p class="empty">No images yet. Be the first to upload one.</p>
+      <% } %>
+      <% images.forEach(function(img) { %>
+        <figure class="card">
+          <img src="/uploads/<%= img.filename %>" alt="<%= img.originalName %>" loading="lazy" />
+          <figcaption><%= new Date(img.uploadedAt).toLocaleString() %></figcaption>
+        </figure>
+      <% }); %>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

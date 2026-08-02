@@ -1,0 +1,16 @@
+{
+  "id": "todo-lovable-3",
+  "spec": "01-todo-auth",
+  "tool": "lovable",
+  "toolVersion": "lovable.dev",
+  "model": "not disclosed by lovable",
+  "generatedAt": "2027-07-27",
+  "prompt": "Build me a to-do list web app. Users can sign up and log in with an email and password. Once logged in, they can add tasks, mark them done, and delete them. Each user only sees their own tasks. Make it look clean and modern.",
+  "followUps": [],
+  "platform": "netlify",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": ""
+}

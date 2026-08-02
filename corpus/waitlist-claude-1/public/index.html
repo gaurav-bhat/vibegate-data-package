@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowNote — Notes that keep up with your flow</title>
+  <meta name="description" content="FlowNote is a new SaaS app for capturing notes without breaking your flow. Join the waitlist for early access." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <span class="logo">FlowNote</span>
+      <a href="#waitlist" class="btn btn-primary btn-sm">Join waitlist</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1>Notes that keep up with your flow</h1>
+        <p class="subtitle">
+          FlowNote captures ideas the moment they happen and organizes them automatically,
+          so you can stay focused on the work instead of the notebook.
+        </p>
+        <a href="#waitlist" class="btn btn-primary btn-lg">Get early access</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="wrap">
+        <h2>Built for how you actually think</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Instant capture</h3>
+            <p>Jot a note from anywhere in under a second — no folders to choose, no menus to navigate.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h3>Auto-organized</h3>
+            <p>FlowNote groups related notes for you, so your ideas stay connected without manual tagging.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3>Find anything fast</h3>
+            <p>Full-text search across every note surfaces what you need in milliseconds.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔄</div>
+            <h3>Always in sync</h3>
+            <p>Your notes stay up to date across every device, the moment you write them.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="waitlist" id="waitlist">
+      <div class="wrap">
+        <h2>Join the waitlist</h2>
+        <p class="subtitle">Be the first to know when FlowNote launches.</p>
+
+        <form id="waitlist-form" class="waitlist-form" novalidate>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+            maxlength="254"
+            autocomplete="email"
+          />
+          <button type="submit" class="btn btn-primary">Notify me</button>
+        </form>
+
+        <div id="form-message" class="form-message hidden"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; 2026 FlowNote</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

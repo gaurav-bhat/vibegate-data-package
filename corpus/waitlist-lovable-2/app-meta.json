@@ -1,0 +1,16 @@
+{
+  "id": "waitlist-lovable-2",
+  "spec": "02-waitlist",
+  "tool": "lovable",
+  "toolVersion": "lovable.dev",
+  "model": "not disclosed by lovable",
+  "generatedAt": "2027-07-28",
+  "prompt": "Create a landing page for a new SaaS product called \"FlowNote\". It should have a hero section, a features section, and a form where visitors enter their email to join the waitlist. Save the emails so I can see who signed up.",
+  "followUps": [],
+  "platform": "netlify",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": ""
+}

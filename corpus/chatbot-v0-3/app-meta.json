@@ -1,0 +1,16 @@
+{
+  "id": "chatbot-v0-3",
+  "spec": "03-chatbot-api",
+  "tool": "v0",
+  "toolVersion": "v0.app",
+  "model": "gpt-4.1",
+  "generatedAt": "2026-07-26",
+  "prompt": "Build a chatbot web app. The user types a message and gets a reply from the OpenAI API. Show the conversation in a chat window. Here is my API key: sk-proj-AbCdEfGhIjKlMnOpQrStUvWxYzAbCdEfGhIjKlMnOpQrStUvWxYz",
+  "followUps": [],
+  "platform": "vercel",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": ""
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <section id="auth-view" class="auth-view">
+      <div class="auth-card">
+        <div class="logo">
+          <span class="logo-mark">&#10003;</span>
+          <span class="logo-text">Tasks</span>
+        </div>
+
+        <div id="auth-error" class="banner banner-error hidden"></div>
+
+        <form id="login-form" class="auth-form">
+          <h1>Welcome back</h1>
+          <p class="subtitle">Log in to see your tasks</p>
+          <label for="login-email">Email</label>
+          <input id="login-email" type="email" autocomplete="email" required />
+          <label for="login-password">Password</label>
+          <input id="login-password" type="password" autocomplete="current-password" required />
+          <button type="submit" class="btn btn-primary">Log in</button>
+          <p class="switch-line">New here? <a href="#" data-switch="signup">Create an account</a></p>
+        </form>
+
+        <form id="signup-form" class="auth-form hidden">
+          <h1>Create your account</h1>
+          <p class="subtitle">Start tracking what matters</p>
+          <label for="signup-email">Email</label>
+          <input id="signup-email" type="email" autocomplete="email" required />
+          <label for="signup-password">Password</label>
+          <input id="signup-password" type="password" autocomplete="new-password" minlength="8" required />
+          <p class="field-hint">At least 8 characters.</p>
+          <button type="submit" class="btn btn-primary">Sign up</button>
+          <p class="switch-line">Already have an account? <a href="#" data-switch="login">Log in</a></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="app-view" class="app-view hidden">
+      <header class="app-header">
+        <div class="logo">
+          <span class="logo-mark">&#10003;</span>
+          <span class="logo-text">Tasks</span>
+        </div>
+        <div class="account">
+          <span id="account-email" class="account-email"></span>
+          <button id="logout-btn" class="btn btn-ghost">Log out</button>
+        </div>
+      </header>
+
+      <main class="app-main">
+        <form id="add-form" class="add-form">
+          <input id="add-input" type="text" placeholder="What needs doing?" autocomplete="off" />
+          <button type="submit" class="btn btn-primary">Add task</button>
+        </form>
+
+        <div id="task-error" class="banner banner-error hidden"></div>
+
+        <div class="task-panel">
+          <ul id="task-list" class="task-list"></ul>
+          <p id="empty-state" class="empty-state hidden">Nothing here yet — add your first task above.</p>
+        </div>
+
+        <p id="task-summary" class="task-summary hidden"></p>
+      </main>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

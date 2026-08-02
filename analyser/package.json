@@ -1,0 +1,30 @@
+{
+  "name": "vibegate",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Minimal inline deployment safety gate for AI-generated apps — research artifact",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "vibegate": "./src/cli.ts"
+  },
+  "scripts": {
+    "cli": "tsx src/cli.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "check": "tsx src/cli.ts check",
+    "verify": "tsx src/cli.ts verify",
+    "analyze": "tsx src/analyze.ts",
+    "corpus": "tsx src/corpus-run.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "puppeteer-core": "^23.11.1"
+  }
+}

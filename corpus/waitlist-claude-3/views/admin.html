@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FlowNote — Waitlist signups</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0b0e14; color: #e9edf5; margin: 0; padding: 40px 24px; }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 1.5rem; margin-bottom: 4px; }
+    #count { color: #97a1b6; margin-bottom: 24px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #232a3b; }
+    th { color: #97a1b6; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.03em; }
+    #empty { color: #97a1b6; padding: 24px 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Waitlist signups</h1>
+    <p id="count"></p>
+    <table id="table" hidden>
+      <thead>
+        <tr><th>Email</th><th>Signed up</th></tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <p id="empty" hidden>No signups yet.</p>
+  </div>
+
+  <script>
+    fetch('/api/admin/signups')
+      .then((res) => res.json())
+      .then((signups) => {
+        document.getElementById('count').textContent = `${signups.length} signup${signups.length === 1 ? '' : 's'}`;
+
+        if (signups.length === 0) {
+          document.getElementById('empty').hidden = false;
+          return;
+        }
+
+        const rowsEl = document.getElementById('rows');
+        for (const s of signups) {
+          const tr = document.createElement('tr');
+          const emailTd = document.createElement('td');
+          emailTd.textContent = s.email;
+          const dateTd = document.createElement('td');
+          dateTd.textContent = new Date(s.createdAt).toLocaleString();
+          tr.append(emailTd, dateTd);
+          rowsEl.appendChild(tr);
+        }
+        document.getElementById('table').hidden = false;
+      });
+  </script>
+</body>
+</html>

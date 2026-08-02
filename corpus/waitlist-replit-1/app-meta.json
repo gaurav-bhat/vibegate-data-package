@@ -1,0 +1,16 @@
+{
+  "id": "waitlist-replit-1",
+  "spec": "02-waitlist",
+  "tool": "replit",
+  "toolVersion": "replit.dev",
+  "model": "not disclosed by replit",
+  "generatedAt": "2027-07-31",
+  "prompt": "Create a landing page for a new SaaS product called \"FlowNote\". It should have a hero section, a features section, and a form where visitors enter their email to join the waitlist. Save the emails so I can see who signed up.",
+  "followUps": [],
+  "platform": "replit",
+  "secretMode": "auto-move",
+  "allowedOrigin": null,
+  "smoke": false,
+  "previewUrl": null,
+  "notes": ""
+}
