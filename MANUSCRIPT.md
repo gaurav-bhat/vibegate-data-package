@@ -455,15 +455,26 @@ takes full responsibility for the content.
 
 ## Data Availability
 
-The analyser source code, the corpus manifest (containing verbatim prompts, tool
-versions, generation dates, and all recorded tool interactions), the complete
-finding dataset (490 labelled findings), and the analysis scripts that reproduce
-every table in this manuscript are available at:
-`https://github.com/gaurav-bhat/vibegate` *(to be published on acceptance;
-archived copy to be deposited with a DOI)*.
+The complete replication package is publicly available at
+https://github.com/gaurav-bhat/vibegate-data-package. It contains the analyser
+source code (`vibegate`), the corpus metadata for all 75 applications (verbatim
+prompts, tool versions, generation dates, and every recorded tool interaction),
+the five fixed specifications, the complete finding dataset (490 findings with
+labels from both labelling passes), the analysis scripts that reproduce every
+table and figure in this manuscript, and the source of all 75 generated
+applications. A `QUICKSTART.md` reproduces the principal results in
+approximately ten minutes.
 
-Generated application source code is included in the archive. Applications were
-generated between 26 July and 2 August 2026.
+Data, labels, and figures are released under CC BY 4.0; the analyser and
+analysis code under the MIT licence. Application source is included for
+verification and remains subject to the terms of the tool that generated it. An
+archived snapshot will be deposited with a DOI on acceptance.
+
+No live credentials are present. The chatbot specification supplies a
+syntactically valid but non-functional placeholder API key, which appears in
+some applications' source and environment files; the corpus was scanned before
+release for provider URLs, JSON Web Tokens, and database connection strings, and
+none were found. Applications were generated between 26 July and 2 August 2026.
 
 ## References
 
