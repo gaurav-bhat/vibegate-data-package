@@ -1,5 +1,9 @@
 # Summary
 
+Full repository: https://github.com/gaurav-bhat/vibegate-data-package (this
+file is part of that repository's `ai-code-disclosure/` directory; see
+`README.md` for how paths below map onto it).
+
 - Source transcripts parsed: 2 (`d162a592-7fc2-418d-8864-4fe7888befe3.jsonl`, `14e9eec6-357a-4f69-ad49-17e4375713ca.jsonl`)
 - Transcript contributing in-scope changes: 1 (`d162a592-7fc2-418d-8864-4fe7888befe3.jsonl`); the second contains no in-scope tool calls (touches only MANUSCRIPT.md).
 - Human prompt turns that led to an in-scope Edit/Write/Read: **26**
@@ -17,7 +21,7 @@ The sole exception is `figures/figure1-frontier.png`, which was only `Read` (vie
 
 ## Path layout
 
-This directory's `before/` and `after/` trees are laid out to mirror the **published package's** structure (`analyser/src/...`, `analysis/*.mjs`, `data/...`, `figures/...`), not the internal development tree the transcripts actually recorded (`vibegate/src/...`, `vibegate/study/*.mjs`, flat under one `vibegate/` root outside this repository). That development-tree root does not exist in `vibegate-data-package` and is not reachable by anyone without the author's machine, so every path here has been remapped onto the equivalent published location. See the "All files" table below for the full old-path -> new-path correspondence, and `PROMPTS-USED.md`'s "Led to changes in" lines, which use the same remapped paths.
+This directory's `before/` and `after/` trees are laid out to match this **published package's** structure (`analyser/src/...`, `analysis/*.mjs`, `data/...`, `figures/...`), so every path here is one you can find in this repository -- none require access to the author's local development machine. `PROMPTS-USED.md`'s "Led to changes in" lines use these same paths.
 
 A handful of files have no published counterpart at all (they were dev-only scaffolding, never carried into the package): these live under `dev-only/`, using their original development-tree name since no package path exists to map onto.
 

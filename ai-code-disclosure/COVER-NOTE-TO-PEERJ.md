@@ -5,6 +5,12 @@ This note accompanies the artefact requested under "Use of Artificial
 Intelligence (AI) in Computer Code": a copy of the code before AI editing, a
 copy after, and the prompts used.
 
+The full replication package, including the shipped analyser and analysis
+code this artefact is cross-checked against, is public at
+https://github.com/gaurav-bhat/vibegate-data-package. What follows describes
+the `ai-code-disclosure/` directory from that repository, uploaded here on
+its own for this requirement.
+
 **The code in question was written with Claude Code from an empty directory,
 not edited into pre-existing code.** The `vibegate` static analyser and the
 corpus-analysis scripts (disclosed in Manuscript §2.7) were new tooling built

@@ -1,5 +1,10 @@
 # Prompts Used
-Every human prompt from a turn that led to an in-scope Edit/Write/Read tool call, verbatim, in chronological order. In scope means it touched the development tree's `vibegate/src`, `vibegate/study` (excluding `study/prompts` and `study/smoke-templates`, which are corpus-generation specs, not analyser code), or `vibegate/fixtures` -- a directory that existed only on the author's machine and is not part of this published repository. The "Led to changes in" line under each turn gives the corresponding path in *this published package* (`analyser/src/...`, `analysis/...`, `data/...`, `figures/...`, or `dev-only/...` for files never carried into the package); see `SUMMARY.md` for the full old-path -> new-path mapping. Some turns carry Claude Code's own auto-injected IDE context tags (`<ide_opened_file>`, `<ide_selection>`) ahead of the human's typed reply; these are kept verbatim since they are literally what the transcript recorded for that turn.
+
+Full repository: https://github.com/gaurav-bhat/vibegate-data-package (this
+file is part of that repository's `ai-code-disclosure/` directory; see
+`README.md` for how paths below map onto it).
+
+Every human prompt from a turn that led to an in-scope Edit/Write/Read tool call, verbatim, in chronological order. In scope means it touched the analyser source, the analysis scripts, or the dev-only fixtures covered by this disclosure (excluding the corpus-generation prompt specs and UI scaffolding templates recorded in the same session, which are inputs to the code-generation tools under study, not analyser code). The "Led to changes in" line under each turn gives the corresponding path in *this published package* (`analyser/src/...`, `analysis/...`, `data/...`, `figures/...`, or `dev-only/...` for files never carried into the package). Some turns carry Claude Code's own auto-injected IDE context tags (`<ide_opened_file>`, `<ide_selection>`) ahead of the human's typed reply, naming whatever file happened to be open in the editor at that moment (unrelated files from other work elsewhere on the author's machine); these are kept verbatim since they are literally what the transcript recorded for that turn -- they are historical context only, not references you need to resolve.
 
 ---
 
