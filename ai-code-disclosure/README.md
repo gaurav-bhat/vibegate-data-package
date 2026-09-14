@@ -12,7 +12,7 @@ prompts used.
 The packaged repository (`vibegate-data-package`) contains only 4 squashed
 packaging commits and has no meaningful git history for the analyser/scripts
 development itself; the original development directory
-(`/Users/gauravbhatnagar/git/gitTelemetry/vibegate`) was never a git
+(`gitTelemetry/vibegate`, outside this repository) was never a git
 repository. The material in this directory is therefore reconstructed
 programmatically from the full Claude Code session transcript(s) that
 performed the development, rather than from version control.
@@ -30,8 +30,8 @@ line):
   contributes nothing to this disclosure and is not otherwise represented
   here.
 
-Both files live under
-`~/.claude/projects/-Users-gauravbhatnagar-git-gitTelemetry/` and were parsed
+Both files live under the local Claude Code project directory for
+`gitTelemetry` (under `~/.claude/projects/`) and were parsed
 with a small Python script (not included here) that walks each line in
 order, in a single streaming pass, skipping any line that fails to parse as
 JSON.
@@ -73,33 +73,60 @@ Human prompt turns that led to those tool calls span
    brand-new path -- see SUMMARY.md.
 4. Final reconstructed content was cross-checked against the corresponding
    file currently shipped in this package (`analyser/src/...`,
-   `analysis/*.mjs`, `figures/figure1-frontier.*`) where a clear path
-   mapping exists. Of the 24 files with such a shipped counterpart, 23
-   matched byte-for-byte. The one mismatch (`src/checks/client-secret.ts`)
-   was traced to a one-line
+   `analysis/*.mjs`, `data/labels-rater2-inspection.csv`,
+   `figures/figure1-frontier.*`) where a clear path mapping exists. Of the
+   25 files with such a shipped counterpart, 24 matched byte-for-byte. The
+   one mismatch (`analyser/src/checks/client-secret.ts`) was traced to a
+   one-line
    `sed -i` edit the assistant ran via a **Bash** tool call (adding
    `existsSync` to an import line) in the same turn as its last `Edit`
    call on that file -- outside the Edit/Write/Read tool calls this
    disclosure otherwise tracks. Where a shipped counterpart exists, the
    `after/` copy here uses that on-disk file (the confirmed true final
    state, including that sed fix); where no shipped counterpart exists
-   (dev-only fixtures, and three `study/` files not carried into the
+   (dev-only fixtures, and two `study/` files not carried into the
    package), the `after/` copy is the transcript-replayed reconstruction.
    See SUMMARY.md for the full per-file list.
+
+## Path mapping: development tree -> this package
+
+The Claude Code session recorded file paths under the author's development
+tree (`vibegate/src/...`, `vibegate/study/...`, `vibegate/fixtures/...`,
+under a `vibegate/` directory that lived outside this repository and is not
+published anywhere). **Every path in `before/`, `after/`, and
+`PROMPTS-USED.md` has been remapped onto the equivalent location in this
+published package**, so they can be followed by anyone with only GitHub
+access to `vibegate-data-package` -- no access to the author's original
+development tree is needed or possible.
+
+| Development-tree path | This package (and this disclosure) |
+|---|---|
+| `vibegate/src/**` | `analyser/src/**` |
+| `vibegate/study/*.mjs` | `analysis/*.mjs` |
+| `vibegate/study/relabel-r2.csv` | `data/labels-rater2-inspection.csv` |
+| `vibegate/study/figure1-frontier.png` | `figures/figure1-frontier.png` |
+| `vibegate/study/PROTOCOL.md` | *(not shipped)* `dev-only/PROTOCOL.md` |
+| `vibegate/study/app-meta.template.json` | *(not shipped)* `dev-only/app-meta.template.json` |
+| `vibegate/fixtures/**` | *(not shipped)* `dev-only/fixtures/**` |
+
+The `dev-only/` entries never made it into the published package (they were
+scaffolding used only during development), so there is no package path to
+map onto; they keep a `dev-only/`-prefixed name instead.
 
 ## Contents
 
 - `README.md` -- this file.
 - `PROMPTS-USED.md` -- every human prompt from turns that led to an
   in-scope Edit/Write/Read, in chronological order, verbatim, each labeled
-  with a turn number, ISO timestamp, and the file(s) it led to changing.
+  with a turn number, ISO timestamp, and the package path(s) (per the
+  mapping above) it led to changing.
 - `before/` -- reconstructed pre-session file content, mirrored at the
-  same path relative to `vibegate/` (e.g. `before/src/cli.ts`). Every code
-  file in scope was net-new, so each `before/` path instead carries a
+  package path above (e.g. `before/analyser/src/cli.ts`). Every code file
+  in scope was net-new, so each `before/` path instead carries a
   `<name>.NOTE.txt` explaining that the file did not exist before this
   session.
 - `after/` -- final file content, same path layout (e.g.
-  `after/src/cli.ts`).
+  `after/analyser/src/cli.ts`).
 - `SUMMARY.md` -- counts and the net-new vs. pre-existing breakdown.
 
 ## What this is not
@@ -110,10 +137,11 @@ history. Two limitations to be transparent about:
   etc.) rather than the Edit/Write tools are not captured by this
   disclosure's tool-call walk; one such case was found and is called out
   above and in SUMMARY.md.
-- `study/figure1-frontier.png` is a generated binary chart image. It was
-  only ever `Read` (viewed) by the assistant in-scope, never
+- `figures/figure1-frontier.png` (development-tree path
+  `vibegate/study/figure1-frontier.png`) is a generated binary chart
+  image. It was only ever `Read` (viewed) by the assistant in-scope, never
   Written/Edited in-scope -- it was produced by *running*
-  `study/make-figure.mjs` (a Bash tool call, i.e. by AI-authored code
+  `analysis/make-figure.mjs` (a Bash tool call, i.e. by AI-authored code
   executing, not by the assistant hand-authoring the PNG). It is
-  therefore excluded from the before/after code reconstruction; see the
-  `.NOTE.txt` next to its path.
+  therefore excluded from the before/after code reconstruction; see
+  `before/figures/figure1-frontier.png.NOTE.txt`.
