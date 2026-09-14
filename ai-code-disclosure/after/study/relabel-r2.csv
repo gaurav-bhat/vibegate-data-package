@@ -1,0 +1,53 @@
+idx,label,rationale
+1,TP,no header configuration in any config file
+2,TP,no header configuration in any config file
+3,TP,no header configuration in any config file
+4,TP,no header configuration in any config file
+5,TP,no header configuration in any config file
+6,TP,no header configuration in any config file
+7,TP,no header configuration in any config file
+8,TP,no header configuration in any config file
+9,TP,no header configuration in any config file
+10,TP,no header configuration in any config file
+11,TP,OpenAI proxy with no caller authentication
+12,TP,OpenAI proxy with no caller authentication
+13,TP,OpenAI proxy with no caller authentication
+14,TP,OpenAI proxy plus conversation reads/writes with no authentication
+15,TP,OpenAI proxy with no caller authentication
+16,TP,OpenAI proxy with no caller authentication
+17,TP,OpenAI proxy with no caller authentication
+18,TP,OpenAI proxy with no caller authentication
+19,INTENDED,healthz endpoint is public by design
+20,TP,OpenAI proxy with no caller authentication
+21,TP,OpenAI proxy with no caller authentication
+22,TP,OpenAI proxy with no caller authentication
+23,TP,server function proxying OpenAI with no authentication
+24,TP,OpenAI proxy with no caller authentication
+25,TP,OpenAI proxy with no caller authentication
+26,TP,product insert/update/delete with no authentication
+27,INTENDED,waitlist signup is a public write by design
+28,INTENDED,healthz endpoint is public by design
+29,TP,product insert/update/delete with no authentication
+30,TP,product insert/update/delete with no authentication
+31,TP,"admin dashboard data world-readable; ""admin"" implies restricted"
+32,TP,"admin dashboard data world-readable; ""admin"" implies restricted"
+33,TP,anonymous insert into admin product table
+34,TP,anonymous insert into admin product table
+35,TP,anonymous update of admin product table
+36,TP,anonymous update of admin product table
+37,TP,anonymous delete from admin product table
+38,TP,anonymous delete from admin product table
+39,INTENDED,spec asks for a gallery anyone with the link can view
+40,TP,"admin dashboard data world-readable; ""admin"" implies restricted"
+41,TP,anonymous upload not requested by spec (only public viewing was)
+42,TP,anonymous insert into admin product table
+43,TP,literal Access-Control-Allow-Origin wildcard
+44,TP,bare cors() defaults to wildcard
+45,TP,literal Access-Control-Allow-Origin wildcard
+46,TP,bare cors() defaults to wildcard
+47,TP,literal Access-Control-Allow-Origin wildcard
+48,TP,bare cors() defaults to wildcard
+49,TP,bare cors() defaults to wildcard
+50,TP,bare cors() defaults to wildcard
+51,TP,API key hardcoded as a literal in committed source
+52,TP,API key hardcoded as a literal in committed source

@@ -1,0 +1,3 @@
+This file was only Read (viewed) by the assistant during the disclosed session(s); it was never created or modified via an Edit/Write tool call within vibegate/src, vibegate/study, or vibegate/fixtures.
+
+Note: file was only Read (viewed) in-scope during this session; never Written or Edited by the assistant in-scope, so no before/after code reconstruction applies (likely a generated build artifact, e.g. binary figure output)

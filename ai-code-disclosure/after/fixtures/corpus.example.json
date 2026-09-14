@@ -1,0 +1,12 @@
+{
+  "_note": "Example corpus manifest. `dir` is relative to this file. In a real study each entry is a generated app (v0/Lovable/Bolt/Replit/...) with its tool, platform, and per-app gate options. Here the built-in fixtures stand in as apps so client-secret and security-headers run across several apps and --per-app has real multi-app data.",
+  "apps": [
+    { "id": "secret-mixed",   "dir": "sample-secret", "tool": "bolt",    "platform": "vercel",  "secretMode": "auto-move" },
+    { "id": "client-widget",  "dir": "client-app",    "tool": "v0",      "platform": "netlify",  "secretMode": "auto-move", "smoke": true },
+    { "id": "server-relay",   "dir": "runnable-app",  "tool": "lovable", "platform": "netlify",  "secretMode": "auto-move", "smoke": true },
+    { "id": "cors-api",       "dir": "cors-app",      "tool": "replit",  "platform": "netlify",  "allowedOrigin": "https://cors-api.example" },
+    { "id": "firebase-store", "dir": "storage-app",   "tool": "bolt",    "platform": "vercel" },
+    { "id": "crud-api",       "dir": "endpoint-app",  "tool": "v0",      "platform": "vercel" },
+    { "id": "old-deps",       "dir": "vuln-app",      "tool": "lovable", "platform": "vercel" }
+  ]
+}

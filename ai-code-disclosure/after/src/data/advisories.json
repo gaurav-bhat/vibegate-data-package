@@ -1,0 +1,15 @@
+{
+  "_note": "Pinned advisory snapshot for reproducibility. `vulnerableBelow` is the first fixed version; a resolved version below it is flagged. Live OSV lookup is future work.",
+  "lodash": [
+    { "id": "GHSA-p6mc-m468-83gw", "title": "Prototype pollution", "severity": "high", "vulnerableBelow": "4.17.21" }
+  ],
+  "minimist": [
+    { "id": "GHSA-xvch-5gv4-984h", "title": "Prototype pollution", "severity": "critical", "vulnerableBelow": "1.2.6" }
+  ],
+  "axios": [
+    { "id": "GHSA-wf5p-g6vw-rhxx", "title": "Server-side request forgery", "severity": "moderate", "vulnerableBelow": "1.6.0" }
+  ],
+  "next": [
+    { "id": "GHSA-fr5h-rqp8-mj6g", "title": "Server-side request forgery in image optimization", "severity": "high", "vulnerableBelow": "14.1.1" }
+  ]
+}

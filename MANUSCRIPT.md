@@ -217,6 +217,14 @@ application was scanned. Only placeholder credentials were used. Analysis was
 static; no deployed system was probed, and the analyser refuses to probe any URL
 not present in a local manifest of the authors' own deployments.
 
+### 2.7 Use of AI tools
+
+Claude Code (Anthropic; https://www.anthropic.com/claude-code; model Sonnet 5)
+was used as an interactive assistant in the design and implementation of the
+vibegate static analyser, in writing corpus-analysis scripts, and in drafting
+and revising the language of this manuscript. All experimental design
+decisions, all labelling judgements, and all conclusions are the author's.
+
 ## 3. Results
 
 ### 3.1 Corpus and findings
@@ -447,11 +455,11 @@ know to ask for.
 ## Acknowledgements
 
 The author thanks the maintainers of the open-source libraries on which the
-analyser depends. The author used Claude (Anthropic) as an interactive
-assistant during the design and implementation of the analyser, during corpus
-analysis, and in drafting and revising this manuscript. All experimental design
-decisions, all labelling judgements, and all conclusions are the author's, who
-takes full responsibility for the content.
+analyser depends. The author used Claude Code (Anthropic) to assist with
+drafting and revising the language of this manuscript. Use of AI in the design
+and implementation of the study is documented in Section 2.7. All experimental
+design decisions, all labelling judgements, and all conclusions are the
+author's, who takes full responsibility for the content.
 
 ## Data Availability
 

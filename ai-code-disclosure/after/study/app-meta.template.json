@@ -1,0 +1,16 @@
+{
+  "id": "todo-v0-1",
+  "spec": "01-todo-auth",
+  "tool": "v0",
+  "toolVersion": "REPLACE — e.g. v0 build date or model shown in the UI",
+  "model": "REPLACE — underlying model if shown",
+  "generatedAt": "2026-07-26",
+  "prompt": "REPLACE — paste the exact prompt used (from study/prompts/)",
+  "followUps": [],
+  "platform": "vercel",
+  "secretMode": "auto-move",
+  "allowedOrigin": "REPLACE-AFTER-DEPLOY — e.g. https://todo-v0-1.vercel.app",
+  "smoke": true,
+  "previewUrl": "REPLACE-AFTER-DEPLOY — for `vibegate verify` (add to .deploy-manifest.json)",
+  "notes": ""
+}

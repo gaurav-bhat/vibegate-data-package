@@ -1,0 +1,2 @@
+This file did not exist before this Claude Code session.
+It was first created by a Write tool call issued by the assistant (net-new, AI-authored from an empty path).
